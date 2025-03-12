@@ -62,7 +62,7 @@
             margin-top: 10px;
         }
 
-        h1, h2 {
+        h1 {
             color: #86c232;
             font-family: Rockwell, serif;
         }
@@ -109,14 +109,25 @@
         }
 
         input[type="button"] {
-            background-color: #86c232; /* Changes button background color to red */
-            color: black; /* Changes button text color to yellow */
-            border: none; /* Removes default border */
-            padding: 10px 25px; /* Adds padding for better appearance */
-            font-size: 16px; /* Sets font size */
-            cursor: pointer; /* Changes cursor to pointer on hover */
-            border-radius: 8px; /* Adds rounded corners (optional) */
+            background-color: #86c232;
+            color: black;
+            border: none;
+            padding: 10px 25px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
         }
+        #projects {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            gap: 20px;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
 
     </style>
 
@@ -171,9 +182,11 @@
     <h1>Projects</h1>
     <p>Explore my completed projects, where ideas turned into reality. Each project reflects my skills, creativity, and passion for problem-solving in the tech world.</p>
 
-    <a href="https://www.google.com"><img src="assets/images/prj1.png" width="180" alt="prj1"></a>
-    <a href="https://www.google.com"><img src="assets/images/prj2.png" width="180" alt="prj2"></a>
-    <a href="https://www.google.com"><img src="assets/images/prj3.png" width="180" alt="prj3"></a>
+    <div id="project-links">
+        <a href="https://www.google.com"><img src="assets/images/prj1.png" width="180" alt="prj1"></a>
+        <a href="https://www.google.com"><img src="assets/images/prj2.png" width="180" alt="prj2"></a>
+        <a href="https://www.google.com"><img src="assets/images/prj3.png" width="180" alt="prj3"></a>
+    </div>
 
 </section>
 
