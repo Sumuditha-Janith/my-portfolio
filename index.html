@@ -13,7 +13,8 @@
     <style>
         html, body {
             background-color: #0B0C10;
-            color: #86c232;
+            color: #FFFFFF;
+            font-family: sans-serif;
             margin: 0;
             padding: 0;
             width: 100%;
@@ -25,49 +26,86 @@
                 background-position: center;
                 /*position: fixed;*/
                 width: 100%;
+                color: #86c232;
+
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
             }
         }
 
-        /*#intro{*/
-        /*    text-align: center;*/
-        /*    margin: 0;*/
-        /*    padding: 0;*/
-        /*    width: 100%;*/
-        /*}*/
+        p {
+            font-size: 26px;
+        }
 
-        /*.container {*/
-        /*    display: grid;*/
-        /*    grid-template-columns: 1fr 1fr;*/
-        /*    align-items: center;*/
-        /*    gap: 10px;*/
-        /*}*/
-
-        .container {
+        #home {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
-            width: 100%;
         }
 
-        #intro{
-            order: 2;
-            text-align: center;
-            width: 100%;
-        }
-
-        #introimage img{
-            /*max-width: 100%;*/
-            order: 1;
+        #introimage img {
+            width: 600px;
             height: auto;
-            width: 95%;
+        }
+
+        #intro {
+            flex: 1;
+            max-width: 600px;
         }
 
         #intro h1{
-            font-size: 36px;
+            margin: 0;
         }
 
-        #intro p{
-            font-size: 24px;
+        #intro div {
+            margin-top: 10px;
+        }
+
+        h1, h2 {
+            color: #86c232;
+            font-family: Rockwell, serif;
+        }
+
+        #my-name {
+            color: #86c232;
+            font-family: Rockwell, serif;
+            font-size: 50px;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        nav ul li a h2 {
+            margin: 28px;
+        }
+
+        #contactBtn {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #socials {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
         }
 
     </style>
@@ -79,13 +117,12 @@
 <header>
     <nav>
         <ul>
-            <a href="#home"><h1>SUMU</h1></a>
-            <a href="#home">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#assignments">Assignments</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <li><a href="#home"><h2>Home</h2></a></li>
+            <li><a href="#projects"><h2>Projects</h2></a></li>
+            <li><a href="#assignments"><h2>Assignments</h2></a></li>
+            <li><a href="#gallery"><h2>Gallery</h2></a></li>
+            <li><a href="#about"><h2>About</h2></a></li>
+            <li><a href="#contact"><h2>Contact</h2></a></li>
         </ul>
     </nav>
 </header>
@@ -93,31 +130,27 @@
 <!--//////////////////////////////////////// home ////////////////////////////////////////-->
 <section id="home">
 
-    <div class="container">
-        <div id="intro">
-            <p>Hi, there! I’m</p>
-            <h1>Sumuditha Janith</h1>
-            <p>
-                Welcome to My Portfolio! I'm on an exciting journey to becoming an IT Professional. Explore my projects, skills, and aspirations as I craft innovative solutions and make my mark in tech. Thank you for visiting!
-            </p>
+    <div id="introimage">
+        <img src="assets/images/home.png" alt="profile">
+    </div>
 
-            <div>
-                <a href="https://www.google.com"><img src="assets/images/socialsfb.png" width="50" alt="Facebook"></a>
-                <a href="https://www.google.com"><img src="assets/images/socialsli.png" width="50" alt="LinkedIn"></a>
-                <a href="https://www.google.com"><img src="assets/images/socialsgit.png" width="50" alt="GitHub"></a>
-                <a href="https://www.google.com"><img src="assets/images/socialsx.png" width="50" alt="X"></a>
-            </div>
+    <div id="intro">
+        <p>Hi, there! I’m</p>
+        <p id="my-name">Sumuditha Janith</p>
+        <p>
+            Welcome to My Portfolio! I'm on an exciting journey to becoming an IT Professional. Explore my projects, skills, and aspirations as I craft innovative solutions and make my mark in tech. Thank you for visiting!
+        </p>
 
-            <div>
-                <input type="button" value="Contact Me" onclick=" ">
-            </div>
+        <div id="contactBtn">
+            <input type="button" value="Contact Me" onclick=" ">
+        </div> <br>
 
+        <div id="socials">
+            <a href="https://www.google.com"><img src="assets/images/socialsfb.png" width="50" alt="Facebook"></a>
+            <a href="https://www.google.com"><img src="assets/images/socialsli.png" width="50" alt="LinkedIn"></a>
+            <a href="https://www.google.com"><img src="assets/images/socialsgit.png" width="50" alt="GitHub"></a>
+            <a href="https://www.google.com"><img src="assets/images/socialsx.png" width="50" alt="X"></a>
         </div>
-
-        <div id="introimage">
-            <img src="assets/images/home.png" alt="profile" width="250"></a>
-        </div>
-
     </div>
 
 </section>
