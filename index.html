@@ -9,132 +9,7 @@
     <meta name="author" content="Sumuditha Janith">
     <meta name="viewport" content="width = device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/lib/normalize.css">
-
-    <style>
-        html, body {
-            background-color: #0B0C10;
-            color: #FFFFFF;
-            font-family: sans-serif;
-            margin: 0;
-            padding: 0;
-            width: 100%;
-
-            header{
-                /*background-color: white; !*for testing*!*/
-                background-repeat: repeat;
-                background-size: cover;
-                background-position: center;
-                /*position: fixed;*/
-                width: 100%;
-                color: #86c232;
-
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-            }
-        }
-
-        p {
-            font-size: 26px;
-        }
-
-        #home {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        #introimage img {
-            width: 600px;
-            height: auto;
-        }
-
-        #intro {
-            flex: 1;
-            max-width: 600px;
-        }
-
-        #intro h1{
-            margin: 0;
-        }
-
-        #intro div {
-            margin-top: 10px;
-        }
-
-        h1 {
-            color: #86c232;
-            font-family: Rockwell, serif;
-        }
-
-        #my-name {
-            color: #86c232;
-            font-family: Rockwell, serif;
-            font-size: 50px;
-            margin: 0;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        nav ul li {
-            margin: 0 10px;
-        }
-
-        nav ul li a {
-            text-decoration: none;
-            color: inherit;
-        }
-
-        nav ul li a h2 {
-            margin: 28px;
-        }
-
-        #contactBtn {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        #socials {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-
-        input[type="button"] {
-            background-color: #86c232;
-            color: black;
-            border: none;
-            padding: 10px 25px;
-            font-size: 16px;
-            cursor: pointer;
-            border-radius: 8px;
-        }
-        #projects {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            gap: 20px;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        #project-links {
-            display: flex; /* Makes the container a flexbox */
-            gap: 20px; /* Adds spacing between the <a> elements */
-            justify-content: center; /* Centers the <a> elements horizontally */
-        }
-
-    </style>
+    <link rel="stylesheet" href="assets/style/style.css">
 
 </head>
 
@@ -143,12 +18,12 @@
 <header>
     <nav>
         <ul>
-            <li><a href="#home"><h2>Home</h2></a></li>
-            <li><a href="#projects"><h2>Projects</h2></a></li>
-            <li><a href="#assignments"><h2>Assignments</h2></a></li>
-            <li><a href="#gallery"><h2>Gallery</h2></a></li>
-            <li><a href="#about"><h2>About</h2></a></li>
-            <li><a href="#contact"><h2>Contact</h2></a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#assignments">Assignments</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -164,7 +39,10 @@
         <p>Hi, there! I’m</p>
         <p id="my-name">Sumuditha Janith</p>
         <p>
-            Welcome to My Portfolio! I'm on an exciting journey to becoming an IT Professional. Explore my projects, skills, and aspirations as I craft innovative solutions and make my mark in tech. Thank you for visiting!
+            Welcome to My Portfolio!<br>
+            I'm on an exciting journey to becoming an IT Professional.<br>
+            Explore my projects, skills, and aspirations as I craft innovative solutions and make my mark in tech.
+            <br>Thank you for visiting!
         </p>
 
         <div id="contactBtn">
@@ -201,22 +79,24 @@
     <h1>Assignments</h1>
     <p>Check out my assignments, showcasing my learning journey. These tasks highlight my growth, technical expertise, and dedication to mastering IT concepts.</p>
 
+    <div id="assignment-links">
     <div>
-        <a href="https://www.google.com"><img src="assets/images/assignstockmngmnt.png" width="180" alt="assignment 1"></a>
+        <a href="https://www.google.com"><img src="assets/images/assignstockmngmnt.png"  alt="assignment 1"></a>
         <h5>Stock Management System<a href="https://www.google.com"></a></h5>
         <p>A simple stock management system made using Java PRF knowledge.</p>
     </div>
 
     <div>
-        <a href="https://www.google.com"><img src="assets/images/assignhtmlbasics.png" width="180" alt="assignment 1"></a>
+        <a href="https://www.google.com"><img src="assets/images/assignhtmlbasics.png" alt="assignment 1"></a>
         <h5>HTML Basics<a href="https://www.google.com"></a></h5>
         <p>This assignment features basics of HTML.</p>
     </div>
 
     <div>
-        <a href="https://www.google.com"><img src="assets/images/assignfigmapractice.png" width="180" alt="assignment 1"></a>
+        <a href="https://www.google.com"><img src="assets/images/assignfigmapractice.png" alt="assignment 1"></a>
         <h5>Figma Practice Assignment<a href="https://www.google.com"></a></h5>
         <p>A Figma practice assignment of making a prototype of a mobile app.</p>
+    </div>
     </div>
 
 </section>
@@ -226,24 +106,32 @@
 
     <h1>Gallery</h1>
     <p>This gallery captures some of my favorite memories and milestones, showcasing the moments that inspire and define me. Take a glimpse into my journey beyond the tech world!</p>
-    <img src="assets/images/emptyimage.png" width="240" alt="emptyimage"></a>
-    <img src="assets/images/emptyimage.png" width="240" alt="emptyimage"></a>
-    <img src="assets/images/emptyimage.png" width="240" alt="emptyimage"></a>
+
+    <div id="gallery-items">
+        <img src="assets/images/emptyimage.png" width="240" alt="emptyimage"></a>
+        <img src="assets/images/emptyimage.png" width="240" alt="emptyimage"></a>
+        <img src="assets/images/emptyimage.png" width="240" alt="emptyimage"></a>
+    </div>
 
 </section>
 
 <!--//////////////////////////////////////// about ////////////////////////////////////////-->
 <section id="about">
-
     <h1>About Me</h1>
-    <p>Hello, I am Sumuditha Janith Edirimanna, and I’m 24 years old. I’m currently pursuing my journey to become an IT Professional at the Institute of Software Engineering. My goal is to work as a full-stack developer in the near future.
 
-        I have studied Java Programming Fundamentals, Object-Oriented Programming (OOP), and Database Management Systems like SQL, building a strong foundation in coding and problem-solving. I’m also exploring web and mobile development to expand my skills and stay current with industry trends.
+    <div>
+        <div id="about-text">
+            <p>Hello, I Sumuditha Janith Edirimanna, and I’m 24 years old. I’m currently pursuing my journey to become an IT Professional at the Institute of Software Engineering. My goal is to work as a full-stack developer in the near future.
 
-        Beyond academics, I’m passionate about movies, music, and gaming, which fuel my creativity. I look forward to growing my skills and creating innovative solutions in the tech world.</p>
+                I have studied Java Programming Fundamentals, Object-Oriented Programming (OOP), and Database Management Systems like SQL, building a strong foundation in coding and problem-solving. I’m also exploring web and mobile development to expand my skills and stay current with industry trends.
 
-    <img src="assets/images/about.png" width="300" alt="about">
+                Beyond academics, I’m passionate about movies, music, and gaming, which fuel my creativity. I look forward to growing my skills and creating innovative solutions in the tech world.</p>
+        </div>
 
+        <div id="about-photo">
+            <img src="assets/images/about.png" width="300" alt="about">
+        </div>
+    </div>
 </section>
 
 <!--//////////////////////////////////////// contact ////////////////////////////////////////-->
@@ -286,14 +174,13 @@
 
 <footer>
 
-    <a href="#home"><h2>SUMU</h2></a>
-
-    <section>
+        <div>
         <a href="https://www.google.com"><img src="assets/images/socialsfb.png" width="50" alt="Facebook"></a>
         <a href="https://www.google.com"><img src="assets/images/socialsli.png" width="50" alt="LinkedIn"></a>
         <a href="https://www.google.com"><img src="assets/images/socialsgit.png" width="50" alt="GitHub"></a>
         <a href="https://www.google.com"><img src="assets/images/socialsx.png" width="50" alt="X"></a>
-    </section>
+        </div>
+
 
     <p>© 2025. All rights reserved.</p>
 
