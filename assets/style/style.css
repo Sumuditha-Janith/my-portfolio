@@ -94,7 +94,7 @@ h1 {
 }
 #socials img {
     transition: transform 0.3s;
-    width: 60px;
+    width: 30px;
 }
 #socials img:hover {
     transform: scale(1.1);
@@ -175,7 +175,9 @@ input, textarea {
     width: 60%;
     padding: 10px;
     margin: 10px 0;
-    border: 2px solid greenyellow;
+    background-color: #0B0C10;
+    color: azure;
+    border: 2px solid #86C232;
     border-radius: 5px;
 }
 
@@ -192,6 +194,7 @@ footer {
     background-color: black;
     color: white;
     text-align: center;
+    height: 15px;
     padding: 15px;
 
     align-items: center;
@@ -205,5 +208,15 @@ footer a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    width: 35px;
+    width: 20px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 4px;
+}
+
+.footer-socials img {
+    width: 15px;
+    height: 15px;
 }
