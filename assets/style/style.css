@@ -31,13 +31,19 @@ nav ul {
     padding: 0;
     margin: 0;
 }
+
 nav ul li {
     margin: 0 15px;
 }
+
 nav ul li a {
     color: #91d237;
     text-decoration: none;
     font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: seashell;
 }
 
 section {
@@ -86,6 +92,10 @@ h1 {
     border-radius: 5px;
 }
 
+#contactBtn input:hover{
+    background-color: seashell;
+}
+
 /* socials icons */
 #socials {
     display: flex;
@@ -114,7 +124,7 @@ h1 {
     transition: transform 0.3s;
     width: 100%;
 }
-#project-links img:hover, section img:hover {
+#project-links img:hover, #assignment-links img:hover {
     transform: scale(1.05);
 }
 
@@ -187,6 +197,10 @@ input[type="button"] {
     border: none;
     cursor: pointer;
     width: 30%;
+}
+
+input[type="button"]:hover {
+    background-color: seashell;
 }
 
 /* footer */
