@@ -113,6 +113,7 @@ h1 {
 }
 #socials img:hover {
     transform: scale(1.1);
+    background-color: seagreen;
 }
 
 /* projects */
@@ -150,6 +151,14 @@ h1 {
 
 #assignment-links > img {
     width: 256px;
+}
+
+#assignment-links a{
+    color: #89c633;
+}
+
+#assignment-links a:hover{
+    color: seashell;
 }
 
 #gallery-items {
@@ -239,4 +248,9 @@ footer a {
 .footer-socials img {
     width: 15px;
     height: 15px;
+}
+
+.footer-socials img:hover {
+    transform: scale(1.1);
+    background-color: seagreen;
 }
