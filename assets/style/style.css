@@ -176,7 +176,7 @@ h1 {
     overflow: hidden;
     transition: transform 0.3s ease;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Add this to stack children vertically */
 }
 
 #assignment-links > div:hover {
@@ -213,14 +213,46 @@ h1 {
     order: 2;
 }
 
-#gallery-items {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+/* Gallery Section - Base */
+#gallery {
+    padding: 50px 20px;
+    background-color: #0B0C10;
 }
 
-#gallery img {
-    width: 256px;
+#gallery h1 {
+    margin-bottom: 20px;
+    color: #89c633;
+}
+
+#gallery p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    color: seashell;
+}
+
+#gallery-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#gallery-items img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#gallery-items img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* About - Base */
@@ -320,7 +352,6 @@ footer a {
     transform: scale(1.1);
     background-color: seagreen;
 }
-
 /* ======================== */
 /* RESPONSIVE MEDIA QUERIES */
 /* ======================== */
@@ -380,6 +411,11 @@ footer a {
     #assignment-links img {
         height: 160px;
     }
+
+    #gallery-items {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
 }
 
 /* Mobile Medium (375px) */
@@ -424,6 +460,11 @@ footer a {
     #assignment-links > div {
         flex: 1 1 280px;
     }
+
+    #gallery-items {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
 
 /* Mobile Large (425px) */
@@ -464,6 +505,11 @@ footer a {
     #assignment-links {
         gap: 25px;
     }
+
+    #gallery-items {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
 }
 
 /* Tablet (768px) */
@@ -497,6 +543,11 @@ footer a {
     #assignment-links > div {
         flex: 1 1 250px;
     }
+
+    #gallery-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
 }
 
 /* Laptop (1024px) */
@@ -507,6 +558,11 @@ footer a {
 
     #assignment-links > div {
         flex: 1 1 250px;
+    }
+
+    #gallery-items {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
     }
 }
 
@@ -521,6 +577,11 @@ footer a {
     }
 
     #project-links {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    #gallery-items {
         grid-template-columns: repeat(3, 1fr);
         gap: 40px;
     }
