@@ -215,7 +215,6 @@ h1 {
 /* Gallery Section - Base */
 #gallery {
     padding: 50px 20px;
-    background-color: #0B0C10;
 }
 
 #gallery h1 {
@@ -257,7 +256,6 @@ h1 {
 /* About - Base */
 #about {
     padding: 50px 20px;
-    background-color: #0B0C10;
 }
 
 #about h1 {
@@ -308,7 +306,6 @@ h1 {
 /* Contact Form - Base */
 #contact {
     padding: 50px 20px;
-    background-color: #0B0C10;
     display: flex;
     flex-direction: column;
     align-items: center;
