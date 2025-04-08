@@ -112,22 +112,46 @@ h1 {
 }
 
 /* Projects - Base */
+#projects {
+    padding: 50px 20px;
+}
+
+#projects h1 {
+    margin-bottom: 20px;
+}
+
+#projects p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+}
+
 #project-links {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
     justify-content: center;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-#project-links img, section img {
-    border-radius: 10px;
-    transition: transform 0.3s;
+#project-links a {
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#project-links img {
     width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-#project-links img:hover, #assignment-links img:hover {
-    transform: scale(1.05);
+#project-links a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Assignments - Base */
@@ -270,12 +294,12 @@ footer a {
 
 /* Mobile Small (320px) */
 @media all and (max-width: 320px) {
-    nav ul li {
-        margin: 0 8px;
+    nav ul {
+        display: none; /* Hide navigation on small screens */
     }
 
-    nav ul li a {
-        font-size: 14px;
+    body {
+        padding-top: 20px; /* Reduce padding since nav is hidden */
     }
 
     section {
@@ -310,12 +334,12 @@ footer a {
 
 /* Mobile Medium (375px) */
 @media all and (min-width: 321px) and (max-width: 375px) {
-    nav ul li {
-        margin: 0 10px;
+    nav ul {
+        display: none; /* Hide navigation on small screens */
     }
 
-    nav ul li a {
-        font-size: 15px;
+    body {
+        padding-top: 20px; /* Reduce padding since nav is hidden */
     }
 
     section {
@@ -341,12 +365,12 @@ footer a {
 
 /* Mobile Large (425px) */
 @media all and (min-width: 376px) and (max-width: 425px) {
-    nav ul li {
-        margin: 0 12px;
+    nav ul {
+        display: none; /* Hide navigation on small screens */
     }
 
-    nav ul li a {
-        font-size: 16px;
+    body {
+        padding-top: 20px; /* Reduce padding since nav is hidden */
     }
 
     section {
