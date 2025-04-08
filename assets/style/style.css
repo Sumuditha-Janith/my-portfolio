@@ -480,6 +480,10 @@ footer a {
         font-size: 14px;
     }
 
+    #contact div {
+        max-width: 280px;
+    }
+
     #contact input,
     #contact textarea {
         padding: 8px;
@@ -552,6 +556,16 @@ footer a {
         padding: 25px 15px;
     }
 
+    #contact div {
+        max-width: 300px;
+    }
+
+    #contact input,
+    #contact textarea {
+        padding: 9px;
+        font-size: 14px;
+    }
+
     #contact p {
         margin-bottom: 25px;
         font-size: 15px;
@@ -614,6 +628,16 @@ footer a {
         padding: 30px 20px;
     }
 
+    #contact div {
+        max-width: 350px;
+    }
+
+    #contact input,
+    #contact textarea {
+        padding: 10px;
+        font-size: 15px;
+    }
+
     #contact p {
         margin-bottom: 30px;
     }
@@ -667,6 +691,16 @@ footer a {
 
     #contact {
         padding: 40px 30px;
+    }
+
+    #contact div {
+        max-width: 450px;
+    }
+
+    #contact input,
+    #contact textarea {
+        padding: 11px;
+        font-size: 15px;
     }
 
     #contact p {
