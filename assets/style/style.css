@@ -176,7 +176,7 @@ h1 {
     overflow: hidden;
     transition: transform 0.3s ease;
     display: flex;
-    flex-direction: column; /* Add this to stack children vertically */
+    flex-direction: column;
 }
 
 #assignment-links > div:hover {
@@ -257,9 +257,13 @@ h1 {
 
 /* About - Base */
 #about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 50px 20px;
+    background-color: #0B0C10;
+}
+
+#about h1 {
+    color: #89c633;
+    margin-bottom: 30px;
 }
 
 #about > div {
@@ -268,25 +272,38 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 50px;
-    max-width: 1000px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
 #about-text {
     flex: 1;
     min-width: 300px;
     text-align: left;
+    color: seashell;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    padding: 0 20px;
 }
 
 #about-photo {
     flex: 1;
     min-width: 300px;
     text-align: center;
+    padding: 20px;
 }
 
 #about-photo img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
     height: auto;
     border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+#about-photo img:hover {
+    transform: scale(1.01);
 }
 
 /* Contact Form - Base */
@@ -352,6 +369,7 @@ footer a {
     transform: scale(1.1);
     background-color: seagreen;
 }
+
 /* ======================== */
 /* RESPONSIVE MEDIA QUERIES */
 /* ======================== */
@@ -416,6 +434,11 @@ footer a {
         grid-template-columns: 1fr;
         gap: 15px;
     }
+
+    #about-photo {
+        display: none;
+    }
+
 }
 
 /* Mobile Medium (375px) */
@@ -465,6 +488,11 @@ footer a {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+
+    #about-photo {
+        display: none;
+    }
+
 }
 
 /* Mobile Large (425px) */
@@ -510,6 +538,11 @@ footer a {
         grid-template-columns: 1fr;
         gap: 25px;
     }
+
+    #about-photo {
+        display: none;
+    }
+
 }
 
 /* Tablet (768px) */
@@ -548,6 +581,11 @@ footer a {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
     }
+
+    #about-photo {
+        display: none;
+    }
+
 }
 
 /* Laptop (1024px) */
