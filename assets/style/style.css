@@ -330,6 +330,16 @@ footer a {
     #about-text, #about-photo {
         min-width: 250px;
     }
+
+    #projects {
+        padding: 30px 15px;
+    }
+
+    #project-links {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
 }
 
 /* Mobile Medium (375px) */
@@ -361,6 +371,15 @@ footer a {
     input[type="button"] {
         width: 40%;
     }
+
+    #projects {
+        padding: 30px 15px;
+    }
+
+    #project-links {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
 }
 
 /* Mobile Large (425px) */
@@ -388,6 +407,16 @@ footer a {
     input, textarea {
         width: 75%;
     }
+
+    #projects {
+        padding: 40px 20px;
+    }
+
+    #project-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
 }
 
 /* Tablet (768px) */
@@ -412,6 +441,11 @@ footer a {
     input, textarea {
         width: 70%;
     }
+
+    #project-links {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
 }
 
 /* Laptop (1024px) */
@@ -434,6 +468,12 @@ footer a {
     #assignment-links > div {
         flex: 1 1 300px;
     }
+
+    #project-links {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
 }
 
 /* Navigation adjustments for smaller screens */
