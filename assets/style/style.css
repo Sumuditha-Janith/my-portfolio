@@ -1,4 +1,3 @@
-/* Base styles (applied to all devices) */
 html {
     scroll-behavior: smooth;
 }
@@ -307,31 +306,86 @@ h1 {
 }
 
 /* Contact Form - Base */
-#contact div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/*#contact div {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*}*/
+
+/*input, textarea {*/
+/*    width: 60%;*/
+/*    padding: 10px;*/
+/*    margin: 10px 0;*/
+/*    background-color: #0B0C10;*/
+/*    color: azure;*/
+/*    border: 2px solid #89c633;*/
+/*    border-radius: 5px;*/
+/*}*/
+
+/*input[type="button"] {*/
+/*    background-color: #89c633;*/
+/*    color: black;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*    width: 30%;*/
+/*}*/
+
+/*input[type="button"]:hover {*/
+/*    background-color: seashell;*/
+/*}*/
+#contact {
+    padding: 50px 20px;
+    background-color: #0B0C10;
 }
 
-input, textarea {
-    width: 60%;
-    padding: 10px;
-    margin: 10px 0;
+#contact h1 {
+    color: #89c633;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+    color: seashell;
+}
+
+#contact div {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
     background-color: #0B0C10;
     color: azure;
     border: 2px solid #89c633;
     border-radius: 5px;
+    font-size: 16px;
 }
 
-input[type="button"] {
+#contact textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+#contact input[type="button"] {
     background-color: #89c633;
     color: black;
     border: none;
     cursor: pointer;
-    width: 30%;
+    width: 150px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-input[type="button"]:hover {
+#contact input[type="button"]:hover {
     background-color: seashell;
 }
 
