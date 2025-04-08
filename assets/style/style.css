@@ -309,11 +309,15 @@ h1 {
 #contact {
     padding: 50px 20px;
     background-color: #0B0C10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #contact h1 {
     color: #89c633;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 #contact p {
@@ -321,14 +325,13 @@ h1 {
     margin: 0 auto 40px;
     line-height: 1.6;
     color: seashell;
+    text-align: center;
 }
 
 #contact div {
     margin-bottom: 20px;
     width: 100%;
     max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #contact input,
@@ -356,6 +359,8 @@ h1 {
     width: 150px;
     font-weight: bold;
     transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
 }
 
 #contact input[type="button"]:hover {
