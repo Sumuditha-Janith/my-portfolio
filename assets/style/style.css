@@ -11,10 +11,28 @@ body {
     padding-top: 70px;
 }
 
+/* Logo styles */
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    padding-left: 20px;
+}
+
+.logo {
+    height: 40px; /* Adjust based on your logo size */
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
 /* Navigation - Base */
 nav {
     background-color: #0B0C10;
-    padding: 16px;
+    padding: 10px 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -23,25 +41,43 @@ nav {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav ul {
+.nav-container {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: center; /* Changed from space-between to center */
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 40px; /* Space between logo and nav links */
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    transition: transform 0.3s;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
     list-style: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    gap: 20px;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
+.nav-links li a {
     color: #91d237;
     text-decoration: none;
     font-size: 18px;
+    transition: color 0.3s;
 }
 
-nav ul li a:hover {
+.nav-links li a:hover {
     color: seashell;
 }
 
@@ -792,5 +828,24 @@ footer a {
 
     #about-text {
         text-align: center;
+    }
+
+    /* Mobile adjustments */
+    @media all and (max-width: 768px) {
+        .nav-container {
+            flex-direction: column;
+            gap: 15px;
+            padding: 15px;
+        }
+
+        .nav-links {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px 15px;
+        }
+
+        .nav-links li a {
+            font-size: 16px;
+        }
     }
 }
