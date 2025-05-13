@@ -139,6 +139,7 @@ h1 {
 #project-links a {
     display: block;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
 }
 
 #project-links img {
@@ -150,7 +151,7 @@ h1 {
 
 #project-links a:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(137, 198, 51, 0.8);
 }
 
 /* Assignments - Base */
@@ -180,6 +181,8 @@ h1 {
 
 #assignment-links > div:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(137, 198, 51, 0.8);
+
 }
 
 #assignment-links a {
@@ -633,6 +636,7 @@ footer a {
     #contact textarea {
         padding: 10px;
         font-size: 15px;
+        margin-left: -12px;
     }
 
     #contact p {
