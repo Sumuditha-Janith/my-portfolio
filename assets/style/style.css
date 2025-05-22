@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    overflow: hidden;
+    overflow-x: hidden;
 
 }
 
@@ -12,7 +12,7 @@ body {
     color: seashell;
     padding-top: 70px;
 
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 /* Logo styles */
