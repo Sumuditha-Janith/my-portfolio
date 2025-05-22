@@ -9,6 +9,8 @@ body {
     background-color: black;
     color: seashell;
     padding-top: 70px;
+    overflow-x: hidden;
+
 }
 
 /* Logo styles */
