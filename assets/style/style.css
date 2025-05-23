@@ -1,7 +1,6 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-
 }
 
 body {
@@ -11,7 +10,6 @@ body {
     background-color: black;
     color: seashell;
     padding-top: 70px;
-
     overflow-x: hidden;
 }
 
@@ -24,7 +22,7 @@ body {
 }
 
 .logo {
-    height: 40px; /* Adjust based on your logo size */
+    height: 40px;
     width: auto;
     transition: transform 0.3s ease;
 }
@@ -48,12 +46,11 @@ nav {
 .nav-container {
     display: flex;
     align-items: center;
-    justify-content: center; /* Changed from space-between to center */
-    flex-wrap: wrap; /* Allows wrapping on small screens */
+    justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
-    gap: 40px; /* Space between logo and nav links */
+    position: relative;
 }
 
 .logo img {
@@ -222,7 +219,6 @@ h1 {
 #assignment-links > div:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(137, 198, 51, 0.8);
-
 }
 
 #assignment-links a {
@@ -448,10 +444,6 @@ footer a {
 
 /* Mobile Small (320px) */
 @media all and (max-width: 320px) {
-    nav ul {
-        display: none;
-    }
-
     body {
         padding-top: 20px;
     }
@@ -542,10 +534,6 @@ footer a {
 
 /* Mobile Medium (375px) */
 @media all and (min-width: 321px) and (max-width: 375px) {
-    nav ul {
-        display: none;
-    }
-
     body {
         padding-top: 20px;
     }
@@ -618,10 +606,6 @@ footer a {
 
 /* Mobile Large (425px) */
 @media all and (min-width: 376px) and (max-width: 425px) {
-    nav ul {
-        display: none;
-    }
-
     body {
         padding-top: 20px;
     }
@@ -676,7 +660,6 @@ footer a {
     #contact textarea {
         padding: 10px;
         font-size: 15px;
-        margin-left: -12px;
     }
 
     #contact p {
@@ -686,7 +669,6 @@ footer a {
     #contact input[type="button"] {
         width: 200px;
     }
-
 }
 
 /* Tablet (768px) */
@@ -701,11 +683,6 @@ footer a {
 
     #assignment-links {
         justify-content: center;
-    }
-
-    #gallery-items {
-        flex-direction: column;
-        gap: 20px;
     }
 
     input, textarea {
@@ -752,7 +729,6 @@ footer a {
         width: 200px;
         padding: 15px;
     }
-
 }
 
 /* Laptop (1024px) */
@@ -784,16 +760,12 @@ footer a {
 /* Laptop Large (1440px) */
 @media all and (min-width: 1025px) {
     #project-links {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
     }
 
     #assignment-links > div {
         flex: 1 1 300px;
-    }
-
-    #project-links {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 40px;
     }
 
     #gallery-items {
@@ -812,17 +784,6 @@ footer a {
     }
 }
 
-/* Navigation adjustments for smaller screens */
-@media all and (max-width: 600px) {
-    nav ul {
-        flex-wrap: wrap;
-    }
-
-    nav ul li {
-        margin: 5px 8px;
-    }
-}
-
 /* About section adjustments for smaller screens */
 @media all and (max-width: 768px) {
     #about > div {
@@ -833,23 +794,66 @@ footer a {
     #about-text {
         text-align: center;
     }
+}
 
-    /* Mobile adjustments */
-    @media all and (max-width: 768px) {
-        .nav-container {
-            flex-direction: column;
-            gap: 15px;
-            padding: 15px;
-        }
+/* Hamburger Menu Styles */
+.toggle_btn {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #91d237;
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
 
-        .nav-links {
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 10px 15px;
-        }
+.toggle_btn:hover {
+    color: seashell;
+}
 
-        .nav-links li a {
-            font-size: 16px;
-        }
+/* Mobile Menu Styles */
+@media all and (max-width: 768px) {
+    .toggle_btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        background-color: #0B0C10;
+        width: 100%;
+        height: calc(100vh - 70px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        transition: left 0.3s ease;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links::before {
+        content: '';
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .nav-links.active::before {
+        opacity: 1;
+    }
+
+    .nav-container {
+        justify-content: space-between;
+        padding: 15px 20px;
     }
 }
